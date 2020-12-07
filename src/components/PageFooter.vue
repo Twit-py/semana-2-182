@@ -1,53 +1,74 @@
 <template>
-  <footer class="page-footer bg-secondary text-white pt-4">
-    <!-- Footer Text -->
-    <div class="container-fluid text-center text-md-left">
-      <!-- Grid row -->
-      <div class="row">
-        <!-- Grid column -->
-        <div class="col-md-6 mt-md-0 mt-3">
-          <!-- Content -->
-          <h5 class="text-uppercase font-weight-bold">Footer text 1</h5>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita
-            sapiente sint, nulla, nihil repudiandae commodi voluptatibus
-            corrupti animi sequi aliquid magnam debitis, maxime quam recusandae
-            harum esse fugiat. Itaque, culpa?
-          </p>
+    <div>
+        <footer class="footer">
+        <div class="flex-container">
+            <div class="footer-container">
+                <h4>Motivación</h4>
+                <p>Este es el proyecto de el sprint numero 1 de la fase de desarrollo de software del grupo 182, el objetivo es dearrollar una pagina web estatica. </p>
+                <h4>enlace Github</h4>
+                <p><a class="white" href="https://github.com/andresromero222/semana-1-182">https://github.com/andresromero222/semana-1-182</a></p>
+            </div>
+            <div class="footer-container">
+                <h4>Contacto</h4>
+                <p>David Mateo Vega Triana: davidvegat17@gmail.com</p>
+                <p>Andrés Felipe Romero Silva: fiorenttos227@gmail.com</p>
+                <p>Santiago Puentes Ninco: sntiagopuentes@gmail.com</p>
+                <p>Laura Juliana Bohorquez Vergara: laujuliana14@gmail.com</p>
+                <p>Cristian Revelo Sanabria: cristianrevelo@hotmail.com</p>
+            </div>
         </div>
-
-        <!-- Grid column -->
-        <hr class="clearfix w-100 d-md-none pb-3" />
-        <!-- Grid column -->
-        <div class="col-md-6 mb-md-0 mb-3">
-          <!-- Content -->
-          <h5 class="text-uppercase font-weight-bold">Footer text 2</h5>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
-            deserunt fuga perferendis modi earum commodi aperiam temporibus quod
-            nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id
-            excepturi hic.
-          </p>
+        <div class= "footer-form-container">
+            <form>
+                <div class="row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Nombre">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Correo">
+                  </div>
+    
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Mensaje">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>                                   
+                </div>
+                
+                </form>
+                
         </div>
-
-        <!-- Grid column -->
-      </div>
-      <!-- Grid row -->
+        <div class="footer-copyright text-center py-1 bg-dark">© 2020 Copyright: DAD
+                 </div>
+    </footer>
     </div>
-    <!-- Footer Text -->
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-1 bg-dark">
-      (c) 2020 Copyright: DAD
-    </div>
-    <!-- Copyright -->
-  </footer>
 </template>
 
 <script>
 export default {
-  name: "PageFooter",
-};
+    name: "PageFooter",
+}
 </script>
 
 <style scoped>
+.footer{
+        background-color: grey;
+        
+    }
+    .footer-container{
+        padding: 20px;
+        color:gainsboro;
+        max-width: 600px;
+    }
+    .footer-form-container{
+        padding: 20px;
+        color:gainsboro;
+    }
+    .flex-container{
+        display: flex;
+    }
+    .white{
+        color:white;
+    }
+    .footer-copyright{
+        color: beige;
+    }
 </style>

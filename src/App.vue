@@ -1,5 +1,19 @@
 <template>
   <div id="app">
+    
+
+    <div class="container-fluid">
+        <!-- Primera Fila -->
+        
+            <section-api>
+
+
+            </section-api>
+        </div>
+      
+    
+
+    <!-- Footer    -->
     <page-footer></page-footer>
 
     <h1>{{ title }}</h1>
@@ -9,18 +23,15 @@
 <script>
 
 
-import PageFooter from './components/PageFooter.vue'
+import PageFooter from './components/PageFooter.vue';
+import SectionApi from './components/SectionApi.vue';
 
 export default {
   name: 'App',
   components:{
-    PageFooter
+    PageFooter,
+    SectionApi
   },
-  data(){
-    return {
-      title : 'Vivo dentro de VUE'
-    }
-  }
 }
 </script>
 
